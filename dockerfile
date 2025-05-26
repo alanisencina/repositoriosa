@@ -1,5 +1,4 @@
-# Dockerfile de ejemplo
-FROM ubuntu:20.04
-RUN apt-get update && apt-get install -y curl
-CMD ["echo", "Hola, Mundo!"] 
+echo "FROM nginx:alpine\n
+COPY . /usr/share/nginx/html" > Dockerfile
+
 
